@@ -2,6 +2,7 @@ import javax.annotation.processing.SupportedAnnotationTypes;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
+//something
 
 public class Main {
     public static void main(String[] args) {
@@ -42,10 +43,8 @@ public class Main {
 
             System.out.println("Would you like to play again? (y or n)");
             String replay = scanner.nextLine();
-            String n = "n";
             String y = "y";
-            if (replay == n) {
-                play = false;
+            if (replay != y) {
                 System.out.println("Game over! Thanks for playing!");
                 System.exit(0);
             } else if (replay == y) {
